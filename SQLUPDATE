@@ -1,30 +1,45 @@
-SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for `cms_hot_campaigns`
--- ----------------------------
-DROP TABLE IF EXISTS `cms_hot_campaigns`;
-CREATE TABLE `cms_hot_campaigns` (
-  `title` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `cms_hot_campaigns` (
+  `title` varchar(255) NOT NULL,
   `image` tinytext NOT NULL,
   `description` tinytext NOT NULL,
-  `redirect_to` int(11) NOT NULL,
+  `redirect_to` varchar(255) NOT NULL,
   `expires` int(16) NOT NULL,
   PRIMARY KEY (`title`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `cms_hot_campaigns` (`title`, `image`, `description`, `redirect_to`, `expires`) VALUES
+('Test Hot campaign', 'http://r63.mabbohotel.net/Public/Images/campaign/festahiphop.gif', 'TESSST ETEFFDG STDSDF SDFFS DFDSF SDF', 'http://google.de', 1344964102),
+('Tetdfds', 'http://r63.mabbohotel.net/Public/Images/campaign/festahiphop.gif', 'dhfxghfxghfghfghfghfxgh', 'http://habbo.st', 1344964102);
 
--- ----------------------------
--- Table structure for `cms_news`
--- ----------------------------
-DROP TABLE IF EXISTS `cms_news`;
-CREATE TABLE `cms_news` (
+CREATE TABLE IF NOT EXISTS `cms_news` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
-  `title` int(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
   `story_short` tinytext NOT NULL,
   `story_long` text NOT NULL,
   `author` varchar(32) NOT NULL,
   `date` int(16) NOT NULL,
   `topstory_image` tinytext NOT NULL,
+  `article_image` tinytext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+INSERT INTO `cms_news` (`id`, `title`, `story_short`, `story_long`, `author`, `date`, `topstory_image`, `article_image`) VALUES
+(1, '1', 'Shortsotry, just talkin'' abit about something freakin awesome', 'fdgfdgdfgdgdfgdgfd', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', NULL),
+(2, '2', 'fdhdfggfd', '', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', NULL),
+(3, '3', 'gfxhjkztrsjgfhy', '', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', NULL),
+(4, '4', 'piuoiuo', '', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', NULL),
+(5, '5', 'uiouioiuo', '', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', NULL),
+(6, '6th News in SnowCMS', 'iuouiouio', 'dfgfdgfdgfhkgkhjn vnhjnghjcgfxhjgfhgfhgfxhgfxhgfxhgfxhgfxhgfxhgfxh', '', 0, 'http://www.habbotimes.net/assets/media/fancenter/topstorys/ts_sanddragon.gif', 'http://images.habbo.com/c_images/article_images_hq/Diner_illustration_dancefloor.gif');
+
+
+CREATE TABLE IF NOT EXISTS `cms_staff_picks` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `type` enum('group','room') DEFAULT NULL,
+  `itemid` int(12) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+
+INSERT INTO `cms_staff_picks` (`id`, `type`, `itemid`, `name`) VALUES
+(1, 'group', 1234, 'Testname shizzle');
