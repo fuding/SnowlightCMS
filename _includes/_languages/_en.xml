@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="EN">
+
+/* 
+ * Default Language file for SnowCMS
+ * Author: Imadj
+ * SnowCMS Version : Alpha 0.1
+ * Language: English   
+ */
+
+
+/* Page: Default languages */
+<loctext id="USERNAME">
+<text>Username</text>
+</loctext>
+
+<loctext id="PASSWORD">
+<text>Password</text>
+</loctext>
+
+<loctext id="CREDITS">
+<text>Credits</text>
+</loctext>
+
+<loctext id="PIXELS">
+<text>Pixels</text>
+</loctext>
+
+<loctext id="USERS_ONLINE">
+<text>Users Online!</text>
+</loctext>
+
+
+<loctext id="WELCOME_BACK">
+<text>Welcome back, </text>
+</loctext>
+
+<loctext id="HABBOS_ONLINE">
+<text>Online</text>
+</loctext>
+
+<loctext id="ENTER_HABBO">
+<text>Enter Habbo</text>
+</loctext>
+
+<loctext id="NAV_ME">
+<text>Me</text>
+</loctext>
+
+<loctext id="NAV_MY_ACCOUNT">
+<text>My Account</text>
+</loctext>
+
+<loctext id="NAV_NEWS">
+<text>News</text>
+</loctext>
+
+<loctext id="NAV_LOGOUT">
+<text>Logout</text>
+</loctext>
+/* Page: Index */
+
+<loctext id="LOGIN_GREETINGS">
+<text>Please login with your account or click register to create one</text>
+</loctext>
+
+<loctext id="REGISTER">
+<text>Register</text>
+</loctext>
+
+<loctext id="LOGIN">
+<text>Login</text>
+</loctext>
+
+/* Page: Me */
+<loctext id="READ_MORE">
+<text>Read more</text>
+</loctext>
+
+<loctext id="FEATURED_CAMPAIGNS">
+<text>Featured Campaigns</text>
+</loctext>
+
+<loctext id="GO_THERE">
+<text>Go there</text>
+</loctext>
+
+<loctext id="WELCOME_TO_HABBO">
+<text>Welcome to Habbo Hotel</text>
+</loctext>
+
+<loctext id="WELCOME_TO_HABBO_TEXT">
+<text>Welcome to Habbo Hotel.<br />We're performing updates to our website over the coming months so please be patient as we fix things that may not be working as expected!</text>
+</loctext>
+
+/* Page: Register */
+
+<loctext id="REGISTER_GREETING">
+<text>We're very excited to meet you, complete the following form and you will get a account with us and 5000 free credits! We'll see you inside!</text>
+</loctext>
+
+<loctext id="NAME_NOT_AVAILABLE">
+<text>The username you have entered is not avaliable, please choose another</text>
+</loctext>
+
+<loctext id="NAME_AVAILABLE">
+<text>The username you have entered is avaliable! You can now continute with your registration</text>
+</loctext>
+
+<loctext id="CONFIRM_PASSWORD">
+<text>Confirm Password</text>
+</loctext>
+
+<loctext id="EMAIL">
+<text>Email</text>
+</loctext>
+
+<loctext id="CAPTCHA">
+<text>Captcha</text>
+</loctext>
+
+<loctext id="ENTER_CAPTCHA">
+<text>Enter Captcha</text>
+</loctext>
+
+<loctext id="BOYS">
+<text>Boys</text>
+</loctext>
+
+<loctext id="GIRLS">
+<text>Girls</text>
+</loctext>
+</language>

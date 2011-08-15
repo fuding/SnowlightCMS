@@ -1,0 +1,30 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `cms_hot_campaigns`
+-- ----------------------------
+DROP TABLE IF EXISTS `cms_hot_campaigns`;
+CREATE TABLE `cms_hot_campaigns` (
+  `title` int(11) NOT NULL AUTO_INCREMENT,
+  `image` tinytext NOT NULL,
+  `description` tinytext NOT NULL,
+  `redirect_to` int(11) NOT NULL,
+  `expires` int(16) NOT NULL,
+  PRIMARY KEY (`title`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+-- ----------------------------
+-- Table structure for `cms_news`
+-- ----------------------------
+DROP TABLE IF EXISTS `cms_news`;
+CREATE TABLE `cms_news` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `title` int(255) NOT NULL,
+  `story_short` tinytext NOT NULL,
+  `story_long` text NOT NULL,
+  `author` varchar(32) NOT NULL,
+  `date` int(16) NOT NULL,
+  `topstory_image` tinytext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule   ^habblet/habbosearchcontent$  _habblet/_habbosearchcontent.php
