@@ -57,13 +57,20 @@
 
  });
 
- </script><ul id="navi"> 
-        <li class="metab{if $f == "me"} selected{/if}"> 
+ </script><ul id="navi">
+        {if $f == "me"} 
+        <li class="metab selected"> 
                 <strong> 
                 {$USER.NAME}
                 </strong> 
                 <span></span> 
         </li> 
+        {else}
+          <li class="metab"> 
+                <a href="/me">{$USER.NAME}</a>
+                <span></span> 
+        </li> 
+        {/if}
 		<li> 
 			<a href="/community">Community</a> 
 			<span></span> 

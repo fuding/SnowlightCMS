@@ -1,3 +1,4 @@
 RewriteEngine On
 
+RewriteRule   ^me$  me.php
 RewriteRule   ^habblet/habbosearchcontent$  _habblet/_habbosearchcontent.php

@@ -23,7 +23,7 @@ $_smarty_tpl->decodeProperties(array (
     'fca17c46e657d76c8cd7f64a6909a5a5af5f92d8' => 
     array (
       0 => 'C:/xampp/htdocs/_templates/_files/_subheader_default.tpl',
-      1 => 1313435361,
+      1 => 1313447394,
       2 => 'file',
     ),
     '281b5b48ebf9a2f20288b6263274557acba20750' => 
@@ -182,14 +182,15 @@ body { behavior: url(/js/csshover.htc); }
 
  });
 
- </script><ul id="navi"> 
+ </script><ul id="navi">
+         
         <li class="metab selected"> 
                 <strong> 
                 Admin
                 </strong> 
                 <span></span> 
         </li> 
-		<li> 
+        		<li> 
 			<a href="/community">Community</a> 
 			<span></span> 
 		</li> 
